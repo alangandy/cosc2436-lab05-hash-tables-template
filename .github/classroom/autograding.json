@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Pytest Tests Pass",
+      "setup": "pip install pytest",
+      "run": "pytest tests/ -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 60,
+      "points": 70
+    },
+    {
+      "name": "HashTable Class Exists",
+      "setup": "",
+      "run": "python -c \"from hashtable import HashTable; print('Class exists')\"",
+      "input": "",
+      "output": "Class exists",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "HashTable Works",
+      "setup": "",
+      "run": "python -c \"from hashtable import HashTable; h = HashTable(); h.put('a', 1); assert h.get('a') == 1; print('Test passed')\"",
+      "input": "",
+      "output": "Test passed",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    }
+  ]
+}
